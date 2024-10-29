@@ -21,7 +21,7 @@ public class Program
         //program.Task_1_8(0.9);
         //program.Task_1_9(0.9);
         //program.Task_1_10(0.9);
-        program.Task_2_1(10);
+        //program.Task_2_1(10);
         //program.Task_2_2(5, 3, 2, 1);
         //program.Task_2_2(5, 1.5, 1.5, 1);
         //program.Task_2_2(5, 1, 3, 1);
@@ -60,21 +60,21 @@ public class Program
         //program.Task_2_11(6);
         //program.Task_2_12(10, 0);
         //program.Task_2_13(10, 5, 0);
-        program.Task_3_1();
-        program.Task_3_2(3, 2, 1);
-        program.Task_3_2(1.5, 1.5, 1);
-        program.Task_3_2(1, 3, 1);
-        program.Task_3_3();
-        program.Task_3_4(1, 2);
-        program.Task_3_5(30);
-        program.Task_3_6();
-        program.Task_3_7();
-        program.Task_3_8();
-        program.Task_3_9();
-        program.Task_3_10();
-        program.Task_3_11();
-        program.Task_3_12(10, 0);
-        program.Task_3_13(10, 5, 0);
+        //program.Task_3_1();
+        //program.Task_3_2(3, 2, 1);
+        //program.Task_3_2(1.5, 1.5, 1);
+        //program.Task_3_2(1, 3, 1);
+        //program.Task_3_3();
+        //program.Task_3_4(1, 2);
+        //program.Task_3_5(30);
+        //program.Task_3_6();
+        //program.Task_3_7();
+        //program.Task_3_8();
+        //program.Task_3_9();
+        //program.Task_3_10();
+        //program.Task_3_11();
+        //program.Task_3_12(10, 0);
+        //program.Task_3_13(10, 5, 0);
     }
     #region Level 1
     public bool Task_1_1(double x, double y)
@@ -448,17 +448,17 @@ public class Program
         // code here;
         if (r > 0)
         {
-            if (type == 0)
+            switch (type)
             {
-                answer = r * r;
-            }
-            else if (type == 1)
-            {
-                answer = Math.PI * r * r;
-            }
-            else if (type == 2)
-            {
-                answer = r * r * Math.Sqrt(3) / 4;
+                case 0:
+                    answer = r * r;
+                    break;
+                case 1:
+                    answer = Math.PI * r * r;
+                    break;
+                case 2:
+                    answer = r * r * Math.Sqrt(3) / 4;
+                    break;
             }
         }
         answer = Math.Round(answer, 2);
@@ -473,17 +473,17 @@ public class Program
         // code here;
         if ((A > 0) && (B > 0))
         {
-            if (type == 0)
+            switch (type)
             {
-                answer = A * B;
-            }
-            else if (type == 1)
-            {
-                answer = Math.PI * Math.Abs(B * B - A * A);
-            }
-            else if (type == 2)
-            {
-                answer = 0.5 * A * Math.Sqrt(B * B - 0.25 * A * A);
+                case 0:
+                    answer = A * B;
+                    break;
+                case 1:
+                    answer = Math.PI * Math.Abs(B * B - A * A);
+                    break;
+                case 2:
+                    answer = 0.5 * A * Math.Sqrt(B * B - 0.25 * A * A);
+                    break;
             }
         }
         answer = Math.Round(answer, 2);
