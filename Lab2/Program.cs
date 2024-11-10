@@ -152,7 +152,8 @@ public class Program
         if (Math.Abs(x) > 1)
         {
             answer = 1;
-        } else
+        }
+        else
         {
             answer = Math.Abs(x);
         }
@@ -185,10 +186,12 @@ public class Program
         if (x > 0)
         {
             answer = 1;
-        } else if (x > -1)
+        }
+        else if (x > -1)
         {
             answer = 1 + x;
-        } else
+        }
+        else
         {
             answer = 0;
         }
@@ -304,7 +307,7 @@ public class Program
         {
             a = double.Parse(Console.ReadLine());
             b = double.Parse(Console.ReadLine());
-            if (b <= Math.Sin(a)) answer++;
+            if ((b <= Math.Sin(a)) && (a >= 0) && (a <= Math.PI) && (b >= 0)) answer++;
         }
         // end
 
@@ -380,7 +383,8 @@ public class Program
 
         // code here
         double a;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++)
+        {
             a = double.Parse(Console.ReadLine());
             if (answer > a) answer = a;
         }
@@ -498,7 +502,7 @@ public class Program
     {
         double answer = 0;
         int n = 0;
-        
+
         // code here
 
         // end
@@ -682,7 +686,8 @@ public class Program
             if (lain == "!")
             {
                 break;
-            } else
+            }
+            else
             {
                 a = int.Parse(lain);
             }
